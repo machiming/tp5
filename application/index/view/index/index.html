@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="1">
+    {volist name='result' id='vo' key='i'}
+    {$vo['bank_id']}
+    {$vo['bank_id']}
+    <tr>
+        {volist name='vo' id='v' key='i'}
+        <td>{$v}</td>
+        {/volist}
+    </tr>
+    {/volist}
+    <script>
+        var x=JSON.parse('{$re2}');
+        console.log(x)
+    </script>
+</table>
+</body>
+</html>
